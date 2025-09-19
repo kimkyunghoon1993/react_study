@@ -8,6 +8,8 @@ import TablePage from "../../pages/commponents/Table";
 import ButtonPage from "../../pages/commponents/Button";
 import PaginationPage from "../../pages/commponents/Pagination";
 import { ComAlert } from "../../pages/commponents/alert";
+import { DatePicker } from "../../pages/commponents/DatePicker";
+import Register from "../../pages/commponents/Register";
 
 
 const router = createBrowserRouter([
@@ -55,6 +57,15 @@ const router = createBrowserRouter([
                         path: "alert",
                         element: <ComAlert />
                     },
+                    {
+                        path: "datePicker",
+                        element: <DatePicker />
+                    },
+                    {
+                        path: "register",
+                        element: <Register />
+                    },
+                    
                 ]
             },
         ]
