@@ -4,9 +4,9 @@ import Button from "../../commponents/button";
 const CommponentsPage = () => {
     return (
         <div className="features">
-            <div className="container">
-                    <Button /><br/><br/>
-                    <h3>아래 card 는 공통으로 사용할수 있는 공통 컴포넌트 입니다.</h3>
+            <form>
+                <Button /><br /><br />
+                <h3>공통 컴포넌트</h3>
                 <div className="features-grid">
                     <Link to="./table">
                         <div className="feature-card">
@@ -44,9 +44,28 @@ const CommponentsPage = () => {
                             </p>
                         </div>
                     </Link>
+                    <Link to="./DatePicker">
+                        <div className="feature-card">
+                            <div className="feature-icon">⚛️</div>
+                            <h2 className="feature-title">DatePicker</h2>
+                            <p className="feature-description">
+                                공통 DatePicker 컴포넌트
+                            </p>
+                        </div>
+                    </Link>
+                    <Link to="./register">
+                        <div className="feature-card">
+                            <div className="feature-icon">⚛️</div>
+                            <h2 className="feature-title">회원가입폼</h2>
+                            <p className="feature-description">
+                                공통 회원가입 컴포넌트
+                            </p>
+                        </div>
+                    </Link>
                 </div>
-            </div>
+            </form>
         </div>
+
 
     );
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './BoardWritePage.css'
+import Button from '../../../commponents/button';
 const BoardWritePage = () => {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
@@ -20,7 +21,7 @@ const BoardWritePage = () => {
         <div className="board-write">
             <div className="write-form">
                 <h1>게시글 작성</h1>
-                <form onSubmit={handleSubmit}>
+                <div>
                     <div className="form-group">
                         <label className="form-label">제목</label>
                         <input
@@ -43,9 +44,11 @@ const BoardWritePage = () => {
                         />
                     </div>
                     <div className="button-group">
-                        <button type="submit" className="submit-button">등록</button>
+                        <Button/>
+                        <br/>
+                        <button type="button" onClick={handleSubmit} className="submit-button">등록</button>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     );

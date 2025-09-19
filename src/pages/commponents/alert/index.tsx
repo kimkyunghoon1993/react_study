@@ -3,7 +3,8 @@ import { Fragment, useState } from "react";
 import './Alert.css';
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
+import { Confirm } from "../../../commponents/confirm";
+import Button from "../../../commponents/button";
 
 const style = {
     position: 'absolute',
@@ -47,6 +48,7 @@ const ChildModal = () => {
                 </Box>
 
             </Modal>
+
         </Fragment>
     );
 }
@@ -65,11 +67,13 @@ export const ComAlert = () => {
 
     return (
         <>
-            <h2>model / Alert</h2>
+            <Button />
+            <h2>model / Alert / confirm</h2>
+            <br/>
             <button className="button-green" onClick={handleModalOpen}>
                 {modalOpen ? "modal 닫기" : "modal 열기"}
             </button>
-
+            <br />
             <Modal
                 open={modalOpen}
                 onClose={handleModalClose}
@@ -87,13 +91,17 @@ export const ComAlert = () => {
                 </Box>
             </Modal>
 
-
+            <br />
             <Alert variant="outlined" severity="warning">
                 This is an outlined warning Alert.
             </Alert>
+            <br />
             <Alert variant="outlined" severity="error">
                 This is an outlined error Alert.
             </Alert>
+            <br />
+            <Confirm />
+
         </>
     );
 }

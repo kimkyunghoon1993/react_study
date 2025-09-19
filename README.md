@@ -1,5 +1,8 @@
 # React + TypeScript + Vite
 
+# 깃헙 에서 프로젝트를 다운 받았을 경우 react_start.md 파일에서 터미널 실행 순서 및 명령어를 확인해주세요.
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

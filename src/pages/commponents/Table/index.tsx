@@ -2,11 +2,11 @@ import Button from '../../../commponents/button';
 import ComTable from '../../../commponents/Table/Table'
 import './Table.css'
 const Table = () => {
-    const columns = ['col1', 'col2', 'col3', 'col4', 'col5','col6'];
+    const columns = ['id', 'col2', 'col3', 'col4', 'col5','col6'];
     // 더미 데이터 생성
     const dummyData = [
         {
-            col1: 1,
+            id: 1,
             col2: '컬럼2 더미 데이터',
             col3: '더미 데이터',
             col4: '2025-09-12',
@@ -14,7 +14,7 @@ const Table = () => {
             col6: '6',
         },
         {
-            col1: 2,
+            id: 2,
             col2: '컬럼2 더미 데이터',
             col3: '더미 데이터',
             col4: '2025-09-11',
@@ -22,7 +22,7 @@ const Table = () => {
             col6: '1',
         },
         {
-            col1: 3,
+            id: 3,
             col2: '컬럼2 더미 데이터',
             col3: '더미 데이터',
             col4: '2025-09-10',
